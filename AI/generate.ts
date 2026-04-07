@@ -18,7 +18,7 @@ export async function gerarRespostaProduto({
 
     const genAI = new GoogleGenerativeAI(apiKey)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-pro-latest',
+      model: 'gemini-2.5-flash',
       generationConfig: {
         temperature: 0.4,
       },
