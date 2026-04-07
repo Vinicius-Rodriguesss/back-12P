@@ -7,7 +7,7 @@ import estoque from '../AI/Mock/index.js'
 
 
 const app = express()
-const port = 3000
+const port = 5005
 
 app.use(express.json())
 
