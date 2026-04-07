@@ -36,7 +36,8 @@ app.post('/ai', async (req, res) => {
     res.json({ resposta })
   } catch (error) {
     console.error(error)
-    res.status(500).json({ error: 'Erro ao processar a pergunta' })
+    const message = error instanceof Error ? error.message : 'Erro ao processar a pergunta'
+    res.status(500).json({ error: message })
   }
 })
 
